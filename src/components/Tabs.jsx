@@ -12,13 +12,13 @@ const Tabs = () => {
         <StyledTab>Completed</StyledTab>
       </Tab.List>
       <Tab.Panels>
-        <Tab.Panel>
+        <Tab.Panel tabIndex={-1}>
           <AllTab />
         </Tab.Panel>
-        <Tab.Panel>
+        <Tab.Panel tabIndex={-1}>
           <ActiveTab />
         </Tab.Panel>
-        <Tab.Panel>
+        <Tab.Panel tabIndex={-1}>
           <CompletedTab />
         </Tab.Panel>
       </Tab.Panels>

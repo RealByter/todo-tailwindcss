@@ -24,7 +24,8 @@ const Item = (props) => {
             e.stopPropagation();
             removeItem(props.index);
           }}
-          className="ml-auto h-5 w-5 cursor-pointer fill-gray-400 hover:fill-gray-500 focus:fill-gray-500 active:fill-gray-600"
+          className="ml-auto h-5 w-5 cursor-pointer fill-gray-400 outline-none hover:fill-gray-500 focus:fill-gray-500 active:fill-gray-600"
+          tabIndex={0}
           xmlns="http://www.w3.org/2000/svg"
           height="1em"
           viewBox="0 0 448 512"
