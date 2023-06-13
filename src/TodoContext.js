@@ -7,6 +7,7 @@ const TodoContext = createContext({
   removeItem: (index) => {},
   setCompleted: (index) => {},
   setUncompleted: (index) => {},
+  clearCompleted: () => {},
 });
 
 export default TodoContext;
