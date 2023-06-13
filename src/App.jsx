@@ -1,5 +1,6 @@
 import { useState } from "react";
 import TodoContext from "./ToDoContext";
+import "./App.css";
 
 const App = () => {
   const [activeList, setActiveList] = useState([]);
@@ -37,7 +38,9 @@ const App = () => {
         setCompleted,
         setUncompleted,
       }}
-    ></TodoContext.Provider>
+    >
+      <h1 className="mb-12 mt-6 text-center text-3xl font-bold">#todo</h1>
+    </TodoContext.Provider>
   );
 };
 
