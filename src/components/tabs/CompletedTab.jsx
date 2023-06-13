@@ -1,5 +1,5 @@
 const CompletedTab = () => {
-  return <div></div>;
+  return <div>completed</div>;
 };
 
 export default CompletedTab;

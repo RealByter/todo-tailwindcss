@@ -1,5 +1,5 @@
 const AllTab = () => {
-  return <div></div>;
+  return <div>all</div>;
 };
 
 export default AllTab;
