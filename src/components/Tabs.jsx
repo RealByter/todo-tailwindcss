@@ -27,7 +27,7 @@ const Tabs = () => {
 };
 
 const StyledTab = (props) => (
-  <Tab className="relative w-1/3 overflow-hidden border-b border-b-gray-300 pb-3 text-sm font-bold after:absolute after:-bottom-5 after:left-1/2 after:block after:h-6 after:w-1/2 after:-translate-x-1/2 after:rounded-lg after:bg-transparent ui-selected:after:bg-blue-500">
+  <Tab className="relative w-1/3 overflow-hidden border-b border-b-gray-300 pb-3 text-sm font-bold after:absolute after:-bottom-5 after:left-1/2 after:block after:h-6 after:w-1/2 after:-translate-x-1/2 after:rounded-lg after:bg-transparent hover:after:bg-blue-200 focus:outline-none ui-selected:after:bg-blue-500 ui-focus-visible:after:bg-blue-700">
     {props.children}
   </Tab>
 );
