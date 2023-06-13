@@ -2,4 +2,5 @@ body {
   font-family: "Roboto", sans-serif;
   max-width: 768px;
   margin-inline: auto;
+  padding-inline: 1rem;
 }
