@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import TodoContext from "./ToDoContext";
 import "./App.css";
+import useWindowDimensions from "./useWindowDimensions";
 
 const App = () => {
   const [activeList, setActiveList] = useState([]);
   const [completedList, setCompletedList] = useState([]);
+  const windowDimensions = useWindowDimensions();
 
   const filterByIndex = (list, index) => list.filter((item, i) => i !== index);
 
