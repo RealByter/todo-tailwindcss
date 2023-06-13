@@ -2,9 +2,9 @@ import { useContext } from "react";
 import TodoContext from "../ToDoContext";
 
 const Item = (props) => {
-  const { setCompleted, setUncompleted } = useContext(TodoContext);
+  const { setCompleted, setUncompleted, removeItem } = useContext(TodoContext);
 
-  const onClickHandler = () => {
+  const onClickHandler = (e) => {
     if (props.completed) setUncompleted(props.index);
     else setCompleted(props.index);
   };
@@ -20,7 +20,11 @@ const Item = (props) => {
       <p className={`${props.completed && "line-through"}`}>{props.details}</p>
       {props.deletable && (
         <svg
-          className="ml-auto h-5 w-5"
+          onClick={(e) => {
+            e.stopPropagation();
+            removeItem(props.index);
+          }}
+          className="ml-auto h-5 w-5 cursor-pointer fill-gray-400 hover:fill-gray-500 focus:fill-gray-500 active:fill-gray-600"
           xmlns="http://www.w3.org/2000/svg"
           height="1em"
           viewBox="0 0 448 512"

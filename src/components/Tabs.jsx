@@ -6,7 +6,7 @@ import CompletedTab from "./tabs/CompletedTab";
 const Tabs = () => {
   return (
     <Tab.Group>
-      <Tab.List>
+      <Tab.List className="mb-4">
         <StyledTab>All</StyledTab>
         <StyledTab>Active</StyledTab>
         <StyledTab>Completed</StyledTab>

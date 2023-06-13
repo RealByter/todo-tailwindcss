@@ -7,7 +7,7 @@ const ItemInput = () => {
 
   return (
     <form
-      className="mt-4 flex flex-wrap items-center"
+      className="mb-6 flex flex-wrap items-center"
       onClick={(e) => {
         e.preventDefault();
         if (details !== "") {
