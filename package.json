@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -14,6 +16,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",
+    "gh-pages": "^5.0.0",
     "prettier": "^2.5.1",
     "prettier-plugin-tailwindcss": "^0.1.5",
     "vitawind": "^2.2.4",
